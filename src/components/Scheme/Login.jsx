@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", loginData);
+      const res = await axios.post("https://jankalyaan-backend.onrender.com/api/auth/login", loginData);
       localStorage.setItem("token", JSON.stringify(res.data.user));
 
       setUser(res.data.user); // ✅ set context after login success

@@ -24,7 +24,7 @@ export default function SchemeDetail() {
     const fetchScheme = async () => {
       try {
         setLoading(true);
-        const res = await axios.post('http://localhost:5000/api/scheme/idReqGetScheme', { id });
+        const res = await axios.post('https://jankalyaan-backend.onrender.com/api/scheme/idReqGetScheme', { id });
         setSchemes(res.data);
         console.log('full data',res.data);
         

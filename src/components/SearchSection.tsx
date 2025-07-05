@@ -18,7 +18,7 @@ const SearchSection = () => {
   ];
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/scheme/getData1')
+    axios.get('https://jankalyaan-backend.onrender.com/api/scheme/getData')
       .then(res => setSchemes(res.data))
       .catch(err => console.error("Error fetching data:", err));
   }, []);

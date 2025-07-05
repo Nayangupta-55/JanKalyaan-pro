@@ -26,7 +26,7 @@ export default function SignUp() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/createThemAc", form);
+      const res = await axios.post("https://jankalyaan-backend.onrender.com/api/auth/test", form);
       console.log("✅ Account Created:", res.data);
       alert("🎉 Account created successfully!");
       navigate('/login'); // Redirect to login page

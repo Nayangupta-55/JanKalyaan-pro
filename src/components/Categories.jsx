@@ -8,7 +8,7 @@ const Categories = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/scheme/getData')
+    fetch('https://jankalyaan-backend.onrender.com/api/scheme/getData')
       .then((res) => res.json())
       .then((data) => {
         const formatted = Array.isArray(data) ? data : [data];
